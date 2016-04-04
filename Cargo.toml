@@ -1,0 +1,28 @@
+[package]
+name          = "pili-sdk-rust"
+version       = "1.5.3"
+license       = "MIT"
+authors       = ["Bai Long  <baishunlong@qiniu.com>"]
+description   = "Pili Streaming Cloud server-side library for Rust"
+documentation = "https://github.com/pili-engineer/pili-sdk-rust"
+homepage      = "https://github.com/pili-engineer/pili-sdk-rust"
+repository    = "https://github.com/pili-engineer/mpili-sdk-rustio"
+readme        = "README.md"
+keywords      = ["streamer", "rtmp"]
+exclude       = [
+  ".gitignore",
+  ".travis.yml",
+  "test/**/*",
+]
+
+[dependencies]
+hyper  = "0.8"
+rustc-serialize = "0.3"
+
+[dev-dependencies]
+env_logger = "0.3.0"
+tempdir    = "0.3.4"
+
+[[test]]
+name = "test"
+path = "test/mod.rs"
